@@ -4,11 +4,11 @@ import Link from "../components/Link.astro";
 
 <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-farve2">
   <div id="navbar" class="flex flex-row justify-between py-5 px-2 z-1000">
-    <div id="logo" class="text-baggrund">
+    <div id="logo" class="text-baggrund montserrat">
       <a href="#link1">Site logo</a>
     </div>
     <nav id="desktopmenu" class="hidden lg:block">
-      <ul class="flex flex-row gap-4 text-baggrund">
+      <ul class="flex flex-row gap-4 text-baggrund montserrat">
         <li class=""><Link href="#hero_unit">Københavnerbilleder</Link></li>
         <li class=""><Link href="#kapitlerne">Bogens indhold</Link></li>
         <li class=""><Link href="#forfatteren">Forfatteren</Link></li>
@@ -37,7 +37,7 @@ import Link from "../components/Link.astro";
     x-on:click="showmenu = false"
     x-on:click.outside="showmenu = false"
   >
-    <ul>
+    <ul class="montserrat">
       <li class="text-center text-baggrund py-2">
         <Link href="#hero_unit">Københavnerbilleder</Link>
       </li>

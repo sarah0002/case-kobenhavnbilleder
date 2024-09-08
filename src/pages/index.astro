@@ -11,39 +11,53 @@ import "motion";
       id="hero_unit"
       class="md:grid grid-cols-2 gap-10 p-10 pt-20 text-farve1"
     >
-      <div class="animate__animated minegenclass">
+      <div class="">
         <img src="src/images/bog.jpg" alt="Billede af bogen" class="" />
       </div>
       <div>
         <h1 class="text-5xl font-bold bebas-neue-regular pt-3">
           Københavnerbilleder - en guide til hipster foto af Sten Simons
         </h1>
-        <p class="py-10">
+        <p class="py-10 montserrat">
           Københavnerbilleder er de danske streetfotografers bibel: Det er en
           fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
           væsentlige aspekter af streetfotografering fra grundlæggende teknik
           til kreative eksperimenter. Alt sammen krydret med masser af
           inspirerende fotos. God læselyst!
         </p>
-        <Button>Køb Nu</Button>
+        <Link href="#koeb_bogen">
+          <Button>Køb Nu!</Button>
+        </Link>
       </div>
     </section>
     <hr class="border-farve1 border-1" />
-    <section id="facts" class="text-farve1 p-10">
-      <ul
-        class="md:grid grid-cols-2 justify-items-center md:divide-x md:divide-farve1"
-      >
-        <div class="p-10">
-          <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
-          <li>Forfatter: Sten Simons</li>
-          <li>Antal sider: 344</li>
+    <section id="facts" class="text-farve1 p-10 montserrat">
+      <dl class="md:grid grid-cols-2 py-10 pb-20">
+        <div class="grid grid-cols-2 gap-4 items-center">
+          <dt class="font-bold text-right gap-x-4 text-farve2">Titel:</dt>
+          <dd>Københavnerbilleder - en guide til hipster foto</dd>
         </div>
-        <div class="p-10">
-          <li>Forlag: Mellem Linjerne</li>
-          <li>ISBN: 987-6-987654-32-1</li>
-          <li>Pris: 399.-</li>
+        <div class="grid grid-cols-2 gap-x-4 items-center">
+          <dt class="font-bold text-right text-farve2">Forfatter:</dt>
+          <dd>Sten Simons</dd>
         </div>
-      </ul>
+        <div class="grid grid-cols-2 gap-x-4 items-center">
+          <dt class="font-bold text-right text-farve2">Antal sider:</dt>
+          <dd>344</dd>
+        </div>
+        <div class="grid grid-cols-2 gap-x-4 items-center">
+          <dt class="font-bold text-right text-farve2">Forlag:</dt>
+          <dd>Mellem Linjerne</dd>
+        </div>
+        <div class="grid grid-cols-2 gap-x-4 items-center">
+          <dt class="font-bold text-right text-farve2">ISBN:</dt>
+          <dd>987-6-987654-32-1</dd>
+        </div>
+        <div class="grid grid-cols-2 gap-x-4 items-center">
+          <dt class="font-bold text-right text-farve2">Pris:</dt>
+          <dd>399.-</dd>
+        </div>
+      </dl>
     </section>
     <hr class="border-farve1 border-1" />
     <section id="billeder" class="md:grid grid-cols-3 gap-10 p-10 text-farve1">
@@ -55,12 +69,12 @@ import "motion";
       <img
         src="src/images/bog_aaben_venstre.jpg"
         alt="Billede af bogen der er åben fra venstre"
-        class="py-5"
+        class="py-5 hover:drop-shadow-md"
       />
       <img
         src="src/images/bog_oppefra.jpg"
         alt="Billede af bogen åben oppefra"
-        class="py-5"
+        class="py-5 hover:drop-shadow-md"
       />
     </section>
     <hr class="border-farve1 border-1" />
@@ -68,7 +82,7 @@ import "motion";
       <h2 class="text-4xl font-bold py-5 bebas-neue-regular">Kapitlerne</h2>
       <div class="md:grid grid-cols-2 gap-5">
         <div>
-          <div class="pb-5">
+          <div class="pb-5 montserrat">
             <h3 class="text-1xl font-bold pb-2">
               Kapitel 1 - Intro til street foto
             </h3>
@@ -80,7 +94,7 @@ import "motion";
               eksempler på street fotos.
             </p>
           </div>
-          <div class="pb-5">
+          <div class="pb-5 montserrat">
             <h3 class="text-1xl font-bold pb-2">
               Kapitel 2 - Om at skyde street
             </h3>
@@ -92,7 +106,7 @@ import "motion";
               tricks til street-skyderiet.
             </p>
           </div>
-          <div class="pb-5">
+          <div class="pb-5 montserrat">
             <h3 class="text-1xl font-bold pb-2">
               Kapitel 3 - Om at finde det rette motiv
             </h3>
@@ -102,7 +116,7 @@ import "motion";
               motiver, stiger chancen gevaldigt for at fange de gode motiver.
             </p>
           </div>
-          <div class="pb-5">
+          <div class="pb-5 montserrat">
             <h3 class="text-1xl font-bold pb-2">
               Kapitel 4 - Digital street foto
             </h3>
@@ -115,7 +129,7 @@ import "motion";
           </div>
         </div>
         <div>
-          <div class="pb-5">
+          <div class="pb-5 montserrat">
             <h3 class="text-1xl font-bold pb-2">
               Kapitel 5 - Analog street foto
             </h3>
@@ -126,7 +140,7 @@ import "motion";
               kapitel får du en række tips og tricks til analog street-foto.
             </p>
           </div>
-          <div class="pb-5">
+          <div class="pb-5 montserrat">
             <h3 class="text-1xl font-bold pb-2">
               Kapitel 6 - Om at skyde sort/hvid
             </h3>
@@ -137,7 +151,7 @@ import "motion";
               tips og tricks til sort/hvid fotografering.
             </p>
           </div>
-          <div class="pb-5">
+          <div class="pb-5 montserrat">
             <h3 class="text-1xl font-bold pb-2">
               Kapitel 7 - Kreative teknikker
             </h3>
@@ -149,7 +163,7 @@ import "motion";
               dyk ned i dette kapitel om eksperimenterende teknikker!
             </p>
           </div>
-          <div class="pb-5">
+          <div class="pb-5 montserrat">
             <h3 class="text-1xl font-bold pb-2">
               Kapitel 8 - Kom helt tæt på!
             </h3>
@@ -168,11 +182,13 @@ import "motion";
       id="download_kapitel"
       class="grid place-items-center text-farve1 p-10"
     >
-      <p class="pb-10">Downloade et prøvekapitel via knappen her</p>
+      <p class="pb-10 text-3xl bebas-neue-regular">
+        Downloade et prøvekapitel via knappen her
+      </p>
       <Button>Downloade Nu</Button>
     </section>
     <hr class="border-farve1 border-1" />
-    <section id="anmeldelser" class="p-10 text-farve1">
+    <section id="anmeldelser" class="p-10 text-farve1 montserrat">
       <h2 class="text-4xl font-bold py-5 bebas-neue-regular">Pressen siger</h2>
       <div class="md:grid grid-cols-3 md:divide-x divide-farve1">
         <div class="p-10">
@@ -481,7 +497,7 @@ import "motion";
           alt="Billede af forfatteren"
           class="w-[400px] h-[300px] object-cover"
         />
-        <p>
+        <p class="montserrat">
           Sten Simons har en lang foto-karriere bag sig. Det hele startede i
           00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens
           forfald. Det ledte til en række udstillinger, og blev senere til hans
@@ -502,7 +518,7 @@ import "motion";
         </h2>
 
         <!-- Antal -->
-        <div class="flex items-center py-5">
+        <div class="flex items-center py-5 montserrat">
           <label for="antal" class="text-baggrund pr-2">Antal:</label>
           <input
             type="number"
@@ -514,7 +530,7 @@ import "motion";
         </div>
 
         <!-- Levering -->
-        <div class="pb-5">
+        <div class="pb-5 montserrat">
           <p class="text-baggrund pb-2">Levering:</p>
           <div class="grid grid-cols-2">
             <div class="">
@@ -529,7 +545,7 @@ import "motion";
         </div>
 
         <!-- Navn -->
-        <div class="pb-5">
+        <div class="pb-5 montserrat">
           <label for="navn" class="block text-baggrund">Navn:</label>
           <input
             type="text"
@@ -541,7 +557,7 @@ import "motion";
         </div>
 
         <!-- Adresse -->
-        <div class="pb-5">
+        <div class="pb-5 montserrat">
           <label for="address" class="block text-baggrund">Adresse:</label>
           <input
             type="text"
@@ -553,7 +569,7 @@ import "motion";
         </div>
 
         <!-- E-mail -->
-        <div class="pb-5">
+        <div class="pb-5 montserrat">
           <label for="email" class="block text-baggrund">E-mail:</label>
           <input
             type="email"
@@ -565,7 +581,7 @@ import "motion";
         </div>
 
         <!-- Postnummer og by -->
-        <div class="pb-5">
+        <div class="pb-5 montserrat">
           <label for="postcode" class="block text-baggrund"
             >Postnummer og by:</label
           >
@@ -589,7 +605,7 @@ import "motion";
         </div>
 
         <!-- Telefon -->
-        <div class="pb-5">
+        <div class="pb-5 montserrat">
           <label for="tel" class="block text-baggrund">Telefon:</label>
           <input
             type="tel"
@@ -601,7 +617,7 @@ import "motion";
         </div>
 
         <!-- Nyhedsbrev -->
-        <div class="flex items-center pb-5">
+        <div class="flex items-center pb-5 montserrat">
           <input
             type="checkbox"
             id="newsletter"
@@ -616,7 +632,7 @@ import "motion";
         <!-- knap -->
         <button
           type="submit"
-          class="flex items-center bg-baggrund px-10 py-2 border border-baggrund rounded-lg"
+          class="flex items-center bg-baggrund px-10 py-2 border border-baggrund rounded-lg montserrat"
           >Til betaling</button
         >
       </form>
